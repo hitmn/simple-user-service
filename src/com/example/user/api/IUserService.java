@@ -22,4 +22,6 @@ public interface IUserService<T, ID extends String> {
      * @return {@code Map} of users by groupId
      */
     Map<String, List<T>> findAllGroupByGroupId();
+
+    String updateStatus(ID id, String status);
 }
